@@ -1,8 +1,9 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 int i,j, k, s, l;
-float m1[1000][1000], coef, aux[1000], elemento;
+float m1[100][100], coef, aux[1000], elemento;
 bool bandera = true;
      
 int main()
@@ -17,10 +18,10 @@ int main()
 	cin>>l;
 	for (i=0;i<k;i++)
 		{
-			for (j=0;j<k;j++)
+			for (j=0;j<l;j++)
 			{
 				cout << "Ingrese el valor de ? " "["<<i<<"]""["<<j<<"]";
-				cin >> m1 [i][j];
+				cin >> m1[i][j];
 			}
 		}
 	
@@ -37,7 +38,7 @@ int main()
 	
 	/****************Matriz traspuesta ***********/
 	cout<< "la matriz traspuesta es :"<<"\n";
-	for (i=0;i<k;i++)
+	for (i=0;i<l;i++)
 		{
 			for (j=0;j<k;j++)
 			{
